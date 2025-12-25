@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajar Javascript</title>
+    <script>
+        function jumlahkan(){
+            let bill = document.getElementById("bill").value;
+            console.log("Bilangan 1: " + bill);
+            let bill2 = document.getElementById("bil2").value;
+            console.log("Bilangan 2: " + bil2);
+            let hasil = parseFloat(bill) + parseFloat(bil2);
+            let area_hasil = document.getElementById("hasil");
+            area_hasil.innerHTML = hasil;
+        }
+    </script>
+</head>
+
+<body>
+    <div id="kotak1">
+        <h3>Kalkulator Penjumlahan Sederhana</h3>
+        Bilangan1 : <input type="number" id="bil1" value="0"><br>
+        +<br>
+        bilangan 2 :<input type="number" id="bil2" value="0"><br>
+        Hasil : <span id="hasil"></span><br>
+        <button onclick="jumlahkan()">Hitung</button>
+    </div>   
+</body>
+</html>
