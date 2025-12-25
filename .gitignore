@@ -1,11 +1,12 @@
-<<<<<<< HEAD
-*
-!praktikum11/
-!praktikum11/**
-!.gitignore
-=======
+# ignore umum
 node_modules/
 dist/
 .cache/
 .env
->>>>>>> 68417487b3cf0852bf6a36cbea06d0b91af619a5
+
+# kecuali folder praktikum11
+!praktikum11/
+!praktikum11/**
+
+# tetap track gitignore
+!.gitignore
