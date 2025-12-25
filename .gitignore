@@ -1,4 +1,11 @@
+<<<<<<< HEAD
 *
 !praktikum11/
 !praktikum11/**
 !.gitignore
+=======
+node_modules/
+dist/
+.cache/
+.env
+>>>>>>> 68417487b3cf0852bf6a36cbea06d0b91af619a5
