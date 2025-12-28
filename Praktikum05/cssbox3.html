@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS BOX 3</title>
+    <style>
+        .header{
+            display: flex;
+        }
+        
+        .baris1{
+            display: flex;
+            margin: 40px 0px;
+        }
+
+        .baris2{
+            display: flex;
+            margin: 40px 0px;
+        }
+
+        .kotak {
+            border: 3px solid black;
+            width: 150px;
+            height: 700px;
+        }
+
+        .item1 {
+            background-color: #00ff55;
+            width: 350px;
+            height: 150px;
+        }
+
+        .item2{
+            background-color: #fbff00;
+            flex: 1;
+            height: 150px;
+            margin-left: 20px;
+        }
+
+        .item3{
+            background-color: #20ec19;
+            width: 350px;
+            height: 650px;
+        } 
+
+        .item4{
+            background-color: #bebea4;
+            flex: 1;
+            height: 650px;
+            margin-left: 20px;
+        }
+
+        .item5 {
+            background-color: #538fff;
+            width: 350px;
+            height: 650px;
+            margin-left: 20px;
+        }
+
+        .item6 {
+            background-color: #1613c7;
+            flex: 1;
+            height: 150px;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="header">
+        <div class="kotak item1"></div>
+        <div class="kotak item2"></div>
+    </div>
+    <div class="baris1">
+        <div class="kotak item3"></div>
+        <div class="kotak item4"></div>
+        <div class="kotak item5"></div>
+    </div>
+    <div class="baris2">
+        <div class="kotak item6"></div>
+    </div>
+</body>
+</html>

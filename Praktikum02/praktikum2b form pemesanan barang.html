@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav style="margin: 25px; margin-right: 600px; border: 1px solid black; padding: 10px; text-align: center;" aria-label="Utama">
+        <a href="#">Home </a>
+        &nbsp;|
+        <a style="margin-left: 100px;" href="#">Register&nbsp;</a>
+        &nbsp;|
+        <a style="margin-left: 100px;" href="#">Policy&nbsp;</a>
+        &nbsp;|   
+        <a style="margin-left: 100px;" href="#">About&nbsp;</a>
+        &nbsp;|
+    </nav>
+
+    <div style="display: flex; align-items: flex-start; margin-top: 20px;"> <!-- main-wrapper -->
+        <div style="flex: 1; margin-right: 20px;"> <!-- image-container -->
+            <img style="border: 1px solid black; margin-left: 25px; max-width: 300px;" src="gambarbaju.jpeg" alt="gambarbaju">
+        </div>
+
+        <div style="flex: 4; padding: 10px;"> <!-- content-container -->
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Title Here:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td>
+                            MacBook Air
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Deskripsi:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td>
+                            Year: 2009 <br>
+                            Model: <br>
+                            Condition: Mint
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Total Amount:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td>
+                           €800
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Pay-To:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td>
+                           123-456-78
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            
+
+            <div> <!-- form-group, tidak ada style tambahan -->
+                <label for="bank">Payment Type:</label>
+                <input style="margin-left: 70px; margin-top: 10px;" type="text" list="bank" name="bank" id="bank" placeholder="Pilih Tipe pembayaran...">
+                <select id="bank">
+                    <option value="BCA">Bank</option>
+                    <option value="BRI">E-wallet</option>
+                    <option value="BNI">Indomaret</option>
+                    <option value="Mandiri">Alfamart</option>               
+                </select>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Account Holder:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <input type="text" style="width: 390px; border: none;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Account No:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <input type="text" style="width: 390px; border: none;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div>
+                <form action="/action_page.php" style="margin-left: 170px; margin-top: 10px;">
+                    <input type="checkbox" id="checkbox1" name="checkbox1">
+                    <label for="checkbox1">Send to Mobile Phone</label><br>
+                    <input type="checkbox" id="checkbox2" name="checkbox2">
+                    <label for="checkbox2">Send to Email</label>
+                </form>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Send to Mobile Phone:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px; height: 20px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <input type="text" style="width: 390px; border: none;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Send to email:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <input type="text" style="width: 390px; border: none;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="margin-top: 50px; margin-left: 160px;">
+                <a href="https://www.example.com" style="display: inline-block; padding: 12px 30px; background-color: #28a745; color: white; text-decoration: none; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; margin-left: 10px; border: 1px solid black;">Pay</a>
+            </div>
+        </div> <!-- content-container -->
+    </div> <!-- main-wrapper -->
+</body>
+</html>

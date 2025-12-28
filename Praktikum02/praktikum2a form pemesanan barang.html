@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <nav style="margin: 25px; margin-right: 600px; border: 1px solid black; padding: 10px;" aria-label="Utama">
+        <a href="#">Home </a>
+        &nbsp;|
+        <a style="margin-left: 100px;" href="#">Generate link&nbsp;</a>
+        &nbsp;|
+        <a style="margin-left: 100px;" href="#">Transaction History&nbsp;</a>
+        &nbsp;|   
+        <a style="margin-left: 100px;" href="#">Policy&nbsp;</a>
+        &nbsp;|
+        <a style="margin-left: 100px;" href="#">Logout&nbsp;</a>
+    </nav>
+
+    <div style="display: flex; align-items: flex-start; margin-top: 20px;"> <!-- main-wrapper -->
+        <div style="flex: 1; margin-right: 20px;"> <!-- image-container -->
+            <img style="border: 1px solid black; margin-left: 25px; max-width: 300px;" src="gambarbaju.jpeg" alt="gambarbaju">
+        </div>
+
+        <div style="flex: 4; padding: 10px;"> <!-- content-container -->
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Title Here:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <input type="text" style="width: 390px; border: none;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Deskripsi:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <textarea style="width: 390px; height: 200px; border: none; padding: 5px; box-sizing: border-box; resize: none;" placeholder="Masukkan deskripsi..."></textarea>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Account Number:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <input type="text" style="width: 390px; border: none;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div> <!-- form-group, tidak ada style tambahan -->
+                <label for="bank">Bank:</label>
+                <input style="margin-left: 128px; margin-top: 10px;" type="text" list="bank" name="bank" id="bank" placeholder="Pilih bank...">
+                <select id="bank">
+                    <option value="BCA">BCA</option>
+                    <option value="BRI">BRI</option>
+                    <option value="BNI">BNI</option>
+                    <option value="Mandiri">Mandiri</option>
+                    <option value="CIMB Niaga">CIMB Niaga</option>
+                </select>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Account Holder:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <input type="text" style="width: 390px; border: none;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <label for="count">Transaction:</label>
+            <input type="number" name="count" style="margin-left: 87px; margin-top: 10px; width: 40px; text-align: center;">
+            
+            <div>
+                <form action="/action_page.php" style="margin-left: 10px; margin-top: 10px;">
+                    <input type="checkbox" id="checkbox1" name="checkbox1">
+                    <label for="checkbox1">Send to Mobile Phone</label><br>
+                    <input type="checkbox" id="checkbox2" name="checkbox2">
+                    <label for="checkbox2">Send to Email</label>
+                </form>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Send to Mobile Phone:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px; height: 20px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <input type="text" style="width: 390px; border: none;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="display: flex; margin-top: 10px;"> <!-- container -->
+                <div style="width: 120px;">Send to email:</div>
+                <table style="border-collapse: collapse; width: 400px; margin-left: 50px;">
+                    <tr>
+                        <td style="border: 1px solid black; height: 18px; width: 400px;">
+                            <input type="text" style="width: 390px; border: none;">
+                        </td>
+                    </tr>
+                </table>
+            </div>
+
+            <div style="margin-top: 50px; margin-left: 160px;">
+                <a href="praktikum3b.html" style="display: inline-block; padding: 12px 30px; background-color: #28a745; color: white; text-decoration: none; font-size: 16px; border: none; border-radius: 5px; cursor: pointer; transition: background-color 0.3s; margin-left: 10px; border: 1px solid black;">Pesan</a>
+            </div>
+        </div> <!-- content-container -->
+    </div> <!-- main-wrapper -->
+
+    <div style="margin-left: 70px; width: 150px; margin-top: -320px;">
+        <label for="upload" style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 6px; cursor: pointer; font-weight: bold;">
+            Upload Picture
+        </label>
+        <input type="file" id="upload" name="upload" accept="image/*" style="display: none;">
+    </div>
+</body>
+</html>
